@@ -188,7 +188,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: animal_people_wolf_1_SimpleMovement
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7425665027789693402, guid: 5b4355d6212d0c8439664d1ea3a0ce98, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: ac6236fd204542648916242b1557e686, type: 2}
+    m_RemovedComponents:
+    - {fileID: 8249930827179827100, guid: 5b4355d6212d0c8439664d1ea3a0ce98, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5b4355d6212d0c8439664d1ea3a0ce98, type: 3}
 --- !u!1001 &386200925
 PrefabInstance:
@@ -1387,7 +1392,13 @@ MonoBehaviour:
   redBin: {fileID: 45805058}
   blueBin: {fileID: 1708389548}
   yellowBin: {fileID: 675594039}
+  anim: {fileID: 1229347215}
   textDisplay: {fileID: 1339605895}
+--- !u!95 &1229347215 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7425665027789693402, guid: 5b4355d6212d0c8439664d1ea3a0ce98, type: 3}
+  m_PrefabInstance: {fileID: 373410390}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1267231706
 PrefabInstance:
   m_ObjectHideFlags: 0

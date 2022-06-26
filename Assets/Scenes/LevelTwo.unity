@@ -993,7 +993,26 @@ MonoBehaviour:
   fishBone: {fileID: 319284620}
   redBin: {fileID: 1197669184}
   blueBin: {fileID: 341509479}
+  anim: {fileID: 574147319}
   textDisplay: {fileID: 56339233}
+--- !u!114 &574147318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574147316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dceb201aa3bad7479854e932e339302, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 574147319}
+--- !u!95 &574147319 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 95665039525092722, guid: 0e74cf81e6fd82546b4797f71ceffb81, type: 3}
+  m_PrefabInstance: {fileID: 1173117707}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &604441004 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1212380520111254, guid: 562df8355904213468a690c4ce6740b6, type: 3}
@@ -1625,7 +1644,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 95665039525092722, guid: 0e74cf81e6fd82546b4797f71ceffb81, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: ac6236fd204542648916242b1557e686, type: 2}
+    m_RemovedComponents:
+    - {fileID: 8748688856612009363, guid: 0e74cf81e6fd82546b4797f71ceffb81, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0e74cf81e6fd82546b4797f71ceffb81, type: 3}
 --- !u!1 &1197669184 stripped
 GameObject:

@@ -15,6 +15,7 @@ public class Mover : MonoBehaviour
     public GameObject redBin;
     public GameObject blueBin;
     public GameObject yellowBin;
+    public Animator anim;
     //public Color goodColor;
     //public Color badColor;
 
@@ -36,18 +37,22 @@ public class Mover : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             rb.transform.Translate(0f, 0f, 0.05f);
+            anim.Play("run");
         }
          if (Input.GetKey(KeyCode.S))
         {
             rb.transform.Translate(0f, 0f, -0.05f);
+            anim.Play("run");
         }
         if (Input.GetKey(KeyCode.A))
         {
             rb.transform.Translate(-0.05f, 0f, 0f);
+            anim.Play("run");
         }
         if (Input.GetKey(KeyCode.D))
         {
             rb.transform.Translate(0.05f, 0f, 0f);
+            anim.Play("run");
         }
         if (Input.GetKey(KeyCode.Q))
         {
@@ -56,6 +61,10 @@ public class Mover : MonoBehaviour
         if (Input.GetKey(KeyCode.E))
         {
             rb.transform.Rotate(0f, -0.25f, 0f);
+        }
+        if(Input.GetKey(KeyCode.Space))
+        {
+            anim.Play("pickup");
         }
 
         PointsAdding();
