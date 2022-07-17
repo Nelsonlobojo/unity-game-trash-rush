@@ -9,7 +9,9 @@ public class Timer : MonoBehaviour
 
     public TMP_Text textDisplay;
     public int timeLeft = 30;
-    public bool timerOn = false;    
+    public bool timerOn = false;
+    public AudioSource timerSound;
+    public AudioSource softMusic;
 
     void Start()
     {
@@ -30,6 +32,22 @@ public class Timer : MonoBehaviour
         timerOn = true;
         yield return new WaitForSeconds(1);
         timeLeft -= 1;
+        if(timeLeft < 15 && timeLeft >0)
+        {
+            timerSound.Play();
+            timerSound.volume = 0.75f;
+            timerSound.volume = Mathf.Lerp(timerSound.volume, 1.0F, 0.25F);
+            softMusic.volume = Mathf.Lerp(softMusic.volume, 0.0F, 0.25F);
+
+        }
+        else
+        {
+            timerSound.Stop();
+        }
+        if(timeLeft == 0)
+        {
+            softMusic.Stop();
+        }
         if(timeLeft <10){
             textDisplay.text = "00:0" + timeLeft.ToString();
         }

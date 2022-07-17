@@ -40,6 +40,7 @@ namespace Supercyan.AnimalPeopleSample
         private float m_jumpTimeStamp = 0;
         private float m_minJumpInterval = 0.25f;
         private bool m_jumpInput = false;
+        
 
         private bool m_isGrounded;
 
@@ -112,6 +113,7 @@ namespace Supercyan.AnimalPeopleSample
             {
                 m_jumpInput = true;
             }
+             
         }
 
         private void FixedUpdate()
